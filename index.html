@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="assets/null_styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>IP Address Tracker</h1>
+      <form id="form">
+        <input type="text" value="2.20.10.10" />
+      </form>
+      <div id="statusBar">
+        <div class="Elem">
+          <div class="Elem_title">IP ADDRESS</div>
+          <div class="Elem_status IPAddress"></div>
+        </div>
+        <div class="Elem">
+          <div class="Elem_title">LOCATION</div>
+          <div class="Elem_status location"></div>
+        </div>
+        <div class="Elem">
+          <div class="Elem_title">TIMEZONE</div>
+          <div class="Elem_status timezone"></div>
+        </div>
+      </div>
+    </header>
+    <div id="mapWrapper"></div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
